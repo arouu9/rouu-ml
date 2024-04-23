@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #ff3700
+}
+
+body{
+    background: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: 800;
+   
+}
+
+.nav{
+    display: flex;
+}
+
+.nav li{
+    list-style: none;
+    margin: 0 10px;
+
+}
+
+.nav li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    word-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.nav li:hover a{
+    color: var(--primary);
+}
+
+.search{
+    position: relative;
+    width: 300px;
+    height: 40px;
+
+}
+
+.search input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    background: transparent;
+    border: 1 solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    border-radius: 4px;
+    padding: 0 10px 0 45px !important;
+    backdrop-filter: blur(10px);
+}
+
+.search input::placeholder{
+    color: #ffffff;
+}
+
+.search i{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("alice_epic.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.skills i{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    background: #9994dd;
+    border-radius: 50%;
+    position: absolute; 
+    top: 60px; 
+    right: 140px;
+}
+
+.banner::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content{
+    position: relative;
+    max-width: 550px;
+    display: none;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.content.active{
+    display: block;
+    visibility: visible;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.movie-title{
+    max-width: 250px;
+}
+
+.banner .content h4{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.banner .content .skill-title{
+    color: #978ee7;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.banner .content h4 span{
+    padding: 0 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.banner .content h4 span:first-child{
+    padding-left: 0;
+}
+
+.banner .content h4 span:last-child{
+    border-right: none;
+}
+
+.skills img{
+    width: 60px;
+    margin-right: 20px;
+    border: 2px solid #9994dd; /* Add a white border with 2px width */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+.banner .content p{
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1.2em;
+    color: #ffffff;
+    margin: 10px 0 20px;
+}
+
+.banner .content .button{
+    position: relative;
+}
+
+.banner .content .button label{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: var(--primary);
+    color: #ffffff;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5;
+    cursor: pointer;
+}
+
+.banner .content .button label:nth-child(2){
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.banner .content .button label:hover:nth-child(2){
+    background: var(--primary);
+}
+
+
+ .carousel-box{
+    top: 70px;
+    left: 30px;
+    position: relative;
+    min-width: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    /* border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px); */
+    border-radius: 10px;
+}
+
+.carousel-box .carousel{
+    position: relative;
+    height: 400px;
+    perspective: 1200px;
+}
+.carousel .carousel-item{
+    width: 210px;
+    cursor: pointer;
+}
+
+.carousel-box .carousel .carousel-item img{
+    max-width: 235px;
+    border-radius: 10px;
+    transform: translateX(8px) translateY(-100px);
+    object-fit: cover;
+    object-position: center;
+}
+
+.play{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    cursor: pointer !important;
+    transition: 0.3s;
+}
+
+.play i{
+    margin-right: 10px;
+    font-size: 40px;
+    cursor: pointer !important;
+}
+
+.play:hover{
+    color: var(--primary);
+}
+
+.sci ul{
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.sci ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sci a:hover{
+    color: var(--primary);
+}
+
+.second{
+    display: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+#second.active{
+    display: block;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#first{
+    display: block;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#first.active{
+    display: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.form-container{
+    background: linear-gradient(to right, #1B3C73, #201658);
+    position: fixed;
+    max-width: 1020px;
+    width: 100%;
+    border-radius: 2px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+    margin-top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.form-container header{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center; 
+}
+
+.form-container .close-btn{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+   
+}
+
+#popups{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popups.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.titile-name {
+    text-align: left; /* Align text to the left */
+    margin-left: 5px; /* Adjust the left margin as needed */
+    margin-top: 10px; /* Reset top margin */
+    margin-bottom: 0; /* Add bottom margin for spacing */
+    color: #ffffff; /* Set text color */
+    font-size: 18px; /* Set font size */
+    font-weight: 100;
+    
+}
+
+.box span{
+    padding: 20px;
+}
+
+.box{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #1B1A55;
+   
+}
+
+.box span img{
+    width: 100px;
+    margin-right: 20px;
+    border: 2px solid #ffffff; /* Add a white border with 2px width */
+    border-radius: 50%;
+    cursor: pointer;
+}
+

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Legends</title>
+    <link rel="stylesheet" href="ml.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="form-container" id="popups">
+        <label onclick="toggles()" class="close-btn"><i class='bx bx-x'></i></label>
+    <header class="mb-3">Item Build</header>
+    <hr style="width: 100%; border-color: #ccc;">
+    <span class="titile-name" id="item-type1">Sustain</span>
+    <div class="box">
+        <span ><img src="assets/img/Tough_Boots.webp" alt="" id="item1"></span>
+        <span ><img src="assets/img/Clock_of_Destiny.webp" alt="" id="item2"></span>
+        <span ><img src="assets/img/Dominance_Ice.webp" alt="" id="item3"></span>
+        <span ><img src="assets/img/Athena_Shield.webp" alt="" id="item4"></span>
+        <span ><img src="assets/img/Oracle.webp" alt="" id="item5"></span>
+        <span ><img src="assets/img/Brute_Force_Breastplate.webp" alt="" id="item6"></span>
+    </div>
+    <br>
+    <span class="titile-name" id="item-type2">Burst</span>
+    <div class="box">
+        <span ><img src="assets/img/Tough_Boots.webp" alt="" id="item7"></span>
+        <span ><img src="assets/img/Clock_of_Destiny.webp" alt="" id="item8"></span>
+        <span ><img src="assets/img/Dominance_Ice.webp" alt="" id="item9"></span>
+        <span ><img src="assets/img/Starlium_Scythe.webp" alt="" id="item10"></span>
+        <span ><img src="assets/img/Holy_Crystal.webp" alt="" id="item11"></span>
+        <span ><img src="assets/img/Winter_Truncheon.webp" alt="" id="item12"></span>
+    </div>
+   
+    </div>
+    <header class="header">
+        <a href="#" class="logo">Mobile Legends Hub</a>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <!-- <div class="search">
+            <input type="text" placeholder="Search">
+            <i class='bx bx-search' aria-hidden="true"></i>
+        </div> -->
+    </header>
+    <div class="banner">
+        <div class="content active">
+            <!-- <img src="ml_logo.png" alt="" class="movie-title"> -->
+            <!-- <span><img src="" alt=""></span> -->
+        <h4>
+            <span id="hero-name">Alice</span><span id="hero-role">Mage/Tank</span>
+        </h4>
+        <div class="skills">
+            <div class="first" id="first">
+                <span><img src="assets/img/alice_pas.png" alt="" id="skill1"></span>
+                <span><img src="assets/img/alice_1.png" alt="" id="skill2"></span>
+                <span><img src="assets/img/alice_2.png" alt="" id="skill3"></span>
+                <span><img src="assets/img/alice_3.png" alt="" id="skill4"></span>
+            </div>
+
+            <div class="second" id="second">
+                <span ><img src="assets/img/alice_pas.png" alt="" id="skill5"></span>
+                <span ><img src="assets/img/alice_1.png" alt="" id="skill6"></span>
+                <span ><img src="assets/img/alice_2.png" alt="" id="skill7"></span>
+                <span><img src="assets/img/alice_3.png" alt="" id="skill8"></span>
+            </div>
+
+            <span id="switch-skill" style="display: none;"><i class='bx bx-refresh'></i></i></span>
+        </div>
+        <h4 class="skill-title">
+            <span>Blood Ancestry</span>
+        </h4>
+        <p class="desctription">
+            Alice restores 1.5% Max Mana per second, which increases to 3% when in combat against enemy heroes.
+            Each time Alice levels up, her Movement Speed increases by 3 and Healing Received increases by 1%.
+        </p>
+        <div class="button">
+            <label onclick=" toggles ()" for="">Item Build</label>
+            <label onclick="" for="">Emblem Set</label>
+            <!-- <label id="modal" style="cursor: pointer;">aw</label> -->
+           
+        </div>
+    </div>
+    <div class="carousel-box">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="assets/img/alice_normal.jpg" alt="">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/kagura_normal.jpg" alt="">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/lunox_normal.jpg" alt="">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/lylia_normal.jpg" alt="">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/vale_normal.jpg" alt="">
+            </div>
+        </div>
+        </div>
+        <a href="https://www.youtube.com/@BelieveInAlice" class="play">
+            <i class='bx bx-play' ></i>Watch Tutorial
+        </a>
+       
+
+        <div class="sci">
+            <ul>
+                <li>
+                    <a href=""><i class='bx bxl-facebook-square'></i></a>
+                </li>
+                <li>
+                    <a href=""><i class='bx bxl-tiktok' ></i></a>
+                </li>
+                <li>
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    function toggles (){
+        var popup = document.getElementById('popups');
+        popup.classList.toggle('active');
+    }
+$(document).ready(function(){
+    $('.carousel').carousel();
+
+    // Function to update skill title and description
+    function updateSkillInfo(title, description) {
+        $('.skill-title').text(title);
+        $('.desctription').text(description);
+    }
+
+    // Click event listener for skill images
+    $('.skills img').click(function() {
+        var skillId = $(this).data('skill-id');
+        switch(skillId) {
+            case 'skill1':
+                // For Alice's first skill
+                updateSkillInfo('Blood Ancestry', "Alice restores 1.5% Max Mana per second, which increases to 3% when in combat against enemy heroes. Each time Alice levels up, her Movement Speed increases by 3 and Healing Received increases by 1%.");
+                break;
+            case 'skill2':
+                // For Alice's second skill
+                updateSkillInfo('Flowing Blood', "Alice casts a sphere of blood energy in the target direction, dealing 400 (+120%Total Magic Power) Magic Damage to enemies in its path. Use Again: Alice immediately teleports to the blood sphere's location.");
+                break;
+            case 'skill3':
+                // For Alice's third skill
+                updateSkillInfo('Blood Awe', "Alice deals 200 (+75%Total Magic Power) plus 2.5 (+0.3%Total Mana)% of the target's Max HP as Magic Damage to nearby enemies and immobilizes them for 0.5s. After the immobilizes effect ends, the target will be slowed by 70% for 1.5s. Creeps can only take up to 250 damage from the max HP-based damage.");
+                break;
+            case 'skill4':
+                // For Alice's ultimate skill
+                updateSkillInfo('Blood Ode', "Alice enters the blood-draining state, consuming 60 Mana while dealing 30 (+30%Total Magic Power) Magic Damage to nearby enemies every 0.5s. She recovers 40 (+30% Total Magic Power) HP each time she damages an enemy hero (only 50% of that HP for other enemy units). Each time this effect damages an enemy hero.");
+                break;
+            case 'skill5':
+                // For Kagura's first skill
+                updateSkillInfo('Yin Yang Gathering', "Upon retrieving the Seimei Umbrella, Kagura gains a 280(+50% TotalMagic Power) shield, stuns nearby enemies for 0.5s, and slows them by 60% for 1s. Cooldown: 4.5s.");
+                break;
+            case 'skill6':
+                // For Kagura's second skill
+                updateSkillInfo('Seimei Umbrella Open', "Kagura sends the Seimei Umbrella to the target location, dealing 315(+105%Total Magic Power) Magic Damage to enemies in its path and slowing them by 60% for 0.5s. The Umbrella will automatically return to Kagura when she's too far away.");
+                break;
+            case 'skill7':
+                // For Kagura's third skill
+                updateSkillInfo('Rasho Umbrella Flee', "Kagura removes all debuffs on her and leaps in the target direction, while leaving the Seimei Umbrella behind.");
+                break;
+            case 'skill8':
+                // For Kagura's ultimate skill
+                updateSkillInfo('Yin Yang Overturn', "Kagura invokes the power of the Seimei Umbrella, dealing 330(+105%Total Magic Power) Magic Damage to nearby enemies, knocking them back, and slowing them by 60% for 0.5s.");
+                break;
+
+            case 'skill9':
+                // For Kagura's ultimate skill
+                updateSkillInfo('Dreamland Twist', "Lunox has lost the sense of real time and cannot benefit from Cooldown Reduction. When Power of Chaos is enhanced, 80% of her Cooldown Reduction will be converted into Magic Penetration. When Power of Order is enhanced, 120% of her Cooldown Reduction will be converted into Physical and Magic Defense.");
+                break;
+
+                case 'skill10':
+                // For Kagura's ultimate skill
+                updateSkillInfo('Starlight Pulse', "Lunox summons a rain of starlight upon nearby enemies, dealing 200(+110%Total Magic Power) Magic Damage and recovering 60(+20%Total Magic Power) HP. The recovering effect doubles when the skill hits enemy heroes.");
+                break;
+
+                case 'skill11':
+                // For Kagura's ultimate skill
+                updateSkillInfo('Chaos Assault', "Lunox unleashes Chaos Energy forward, dealing Magic Damage equal to 200(+120%Total Magic Power) plus 2.5% of their Max HP to targets hit (when the target is a creep, they take an additional 100% Max HP as damage) and reducing their Movement Speed by 10% for 1s.");
+                break;
+
+                case 'skill12':
+                // For Kagura's ultimate skill
+                updateSkillInfo('Cosmic Fission', "When Lunox uses the power of Order and Chaos, she will deal 300(+150%Total Magic Power) Magic Damage to the targets along the way and slowing them by 40% for 2s.");
+                break;
+
+                case 'skill13':
+                // For Kagura's ultimate skill
+                updateSkillInfo('Angry Gloom', "Lylia gets power from Gloom, increasing her Movement SPD by 15%. Each Gloom upgrade further increases this bonus by 5%. Gloom gains an upgrade every time he devours Shadow Energy, up to 5 times. Gloom upgrade increases the detonation damage of Shadow Energy.");
+                break;
+
+                case 'skill14':
+                // For Kagura's ultimate skill
+                updateSkillInfo('Magic Shockwave', "Lylia sends out Gloom with a shockwave, dealing 250(+100%Total Magic Power) Magic Damage to enemies in a line and slowing them by 30% for 1.5s. If Gloom touches Shadow Energy, he will devour and detonate it.");
+                break;
+
+                case 'skill15':
+                // For Kagura's ultimate skill
+                updateSkillInfo('Shadow Energy', "Lylia condenses Shadow Energy at the target location, dealing 100(+50%Total Magic Power) Magic Damage to enemies hit and slowing them by 80%. Shadow Energy can be detonated by Gloom's devour, dealing 250(+100% Total Magic Power) Magic Damage to the enemies nearby.");
+                break;
+
+                case 'skill16':
+                // For Kagura's ultimate skill
+                updateSkillInfo('Black Shoes', "Lylia returns to the Black Shoes' location 4s ago and restores all Shadow Energy charges, her HP and Mana to the previous state, and an extra 10% Max HP. She also gains 20% extra Movement Speed for 2s.");
+                break;
+
+                case 'skill17':
+                // For Kagura's ultimate skill
+                updateSkillInfo('Windtalk', "When Vale reaches Lv.4/6/8, he can choose to enhance one of his skills and each skill can be enhanced once only. For each enhancement, he can pick one specialization of the chosen skill.");
+                break;
+
+                case 'skill18':
+                // For Kagura's ultimate skill
+                updateSkillInfo('Wind Blade', "Ability AoE TypeMagic Skill Vale unleashes two wind blades toward the left and right of a designated area. Wind blades deal 250(+80%Total Magic Power) Magic Damage.");
+                break;
+
+                case 'skill19':
+                // For Kagura's ultimate skill
+                updateSkillInfo('Windblow', "Vale sends a whirlwind forward. Deals 410(+80%Total Magic Power) Magic Damage and slows enemies by 40% when the whirlwind hits an enemy unit for 2s.");
+                break;
+
+                case 'skill20':
+                // For Kagura's ultimate skill
+                updateSkillInfo('Windstorm', "Vale summons a windstorm in a designated area. After 1.5s, the windstorm will explode, dealing 800(+160%Total Magic Power) Magic Damage to enemies in the area.");
+                break;
+
+            default:
+                // Default case if no skill id matches
+                break;
+        }
+    });
+
+      // Setup click event listener for switch-skill outside the switch statement
+      $('#switch-skill').on('click', function() {
+        // Toggle the 'active' class for the .second and .first elements
+        $('.second, .first').toggleClass('active');
+    });
+
+
+    $('.carousel-item').click(function() {
+        var carouselIndex = $(this).index();
+        switch(carouselIndex) {
+            case 0:
+                // Update skill images and description for Alice
+                $('#skill1').attr('src', 'assets/img/alice_pas.png').data('skill-id', 'skill1');
+                $('#skill2').attr('src', 'assets/img/alice_1.png').data('skill-id', 'skill2');
+                $('#skill3').attr('src', 'assets/img/alice_2.png').data('skill-id', 'skill3');
+                $('#skill4').attr('src', 'assets/img/alice_3.png').data('skill-id', 'skill4');
+                // Update skill info for Alice
+                updateSkillInfo('Blood Ancestry', "Alice restores 1.5% Max Mana per second, which increases to 3% when in combat against enemy heroes. Each time Alice levels up, her Movement Speed increases by 3 and Healing Received increases by 1%.");
+                $('#hero-name').text('Alice');
+                $('#hero-role').text('Mage/Tank');
+                $('.banner').css('background-image', 'url("alice_epic.jpg")');
+                $('#switch-skill').hide();
+                $('.play').attr('href', 'https://www.youtube.com/@BelieveInAlice');
+
+                $('#item-type1').text('Sustain');
+                $('#item1').attr('src', 'assets/img/Tough_Boots.webp');
+                $('#item2').attr('src', 'assets/img/Clock_of_Destiny.webp');
+                $('#item3').attr('src', 'assets/img/Dominance_Ice.webp');
+                $('#item4').attr('src', 'assets/img/Athena_Shield.webp');
+                $('#item5').attr('src', 'assets/img/Oracle.webp');
+                $('#item6').attr('src', 'assets/img/Brute_Force_Breastplate.webp');
+
+                $('#item-type2').text('Burst');
+                $('#item7').attr('src', 'assets/img/Tough_Boots.webp');
+                $('#item8').attr('src', 'assets/img/Clock_of_Destiny.webp');
+                $('#item9').attr('src', 'assets/img/Dominance_Ice.webp');
+                $('#item10').attr('src', 'assets/img/Starlium_Scythe.webp');
+                $('#item11').attr('src', 'assets/img/Holy_Crystal.webp');
+                $('#item12').attr('src', 'assets/img/Winter_Truncheon.webp');
+
+                if ($('.second').hasClass('active')) {
+                    $('.second').toggleClass('active');
+                    $('.first').toggleClass('active');
+                }
+                break;
+            case 1:
+                // Update skill images and description for Kagura
+                $('#skill1').attr('src', 'assets/img/kagura_pas.png').data('skill-id', 'skill5');
+                $('#skill2').attr('src', 'assets/img/kagura_1.png').data('skill-id', 'skill6');
+                $('#skill3').attr('src', 'assets/img/kagura_2.png').data('skill-id', 'skill7');
+                $('#skill4').attr('src', 'assets/img/kagura_3.png').data('skill-id', 'skill8');
+                // skill 2nd set
+                $('#skill5').attr('src', 'assets/img/kagura_pas.png').data('skill-id', 'skill5');
+                $('#skill6').attr('src', 'assets/img/kagura_2nd_1.png').data('skill-id', 'skill6');
+                $('#skill7').attr('src', 'assets/img/kagura_2nd_2.png').data('skill-id', 'skill7');
+                $('#skill8').attr('src', 'assets/img/kagura_2nd_3.png').data('skill-id', 'skill8');
+                // Update skill info for Kagura
+                updateSkillInfo('Yin Yang Gathering', "Upon retrieving the Seimei Umbrella, Kagura gains a 280(+50% TotalMagic Power) shield, stuns nearby enemies for 0.5s, and slows them by 60% for 1s. Cooldown: 4.5s.");
+                $('#hero-name').text('Kagura');
+                $('#hero-role').text('Mage');
+                $('.banner').css('background-image', 'url("assets/img/kagura_epic1.jpg")');
+                $('.play').attr('href', '#');
+                
+                $('#switch-skill').show();
+                    
+                if ($('.second').hasClass('active')) {
+                    $('.second').toggleClass('active');
+                    $('.first').toggleClass('active');
+                }
+                $('#item-type1').text('CD Reduction');
+                $('#item1').attr('src', 'assets/img/Magic_Shoes.webp');
+                $('#item2').attr('src', 'assets/img/Clock_of_Destiny.webp');
+                $('#item3').attr('src', 'assets/img/Lightning_Truncheon.webp');
+                $('#item4').attr('src', 'assets/img/Necklace_of_Durance.webp');
+                $('#item5').attr('src', 'assets/img/Divine_Glaive.webp');
+                $('#item6').attr('src', 'assets/img/Winter_Truncheon.webp');
+
+                $('#item-type2').text('Burst');
+                $('#item7').attr('src', 'assets/img/Arcane_boots.webp');
+                $('#item8').attr('src', 'assets/img/Genius_Wand.webp');
+                $('#item9').attr('src', 'assets/img/Holy_Crystal.webp');
+                $('#item10').attr('src', 'assets/img/Divine_Glaive.webp');
+                $('#item11').attr('src', 'assets/img/Blood_Wings.webp');
+                $('#item12').attr('src', 'assets/img/Winter_Truncheon.webp');
+                break;
+         
+
+            case 2:
+                // Update skill images and description for Kagura
+                $('#skill1').attr('src', 'assets/img/lunox_pas.png').data('skill-id', 'skill9');
+                $('#skill2').attr('src', 'assets/img/lunox_1.png').data('skill-id', 'skill10');
+                $('#skill3').attr('src', 'assets/img/lunox_2.png').data('skill-id', 'skill11');
+                $('#skill4').attr('src', 'assets/img/lunox_3.png').data('skill-id', 'skill12');
+                // skill 2nd set
+                $('#skill5').attr('src', 'assets/img/kagura_pas.png').data('skill-id', 'skill5');
+                $('#skill6').attr('src', 'assets/img/kagura_2nd_1.png').data('skill-id', 'skill6');
+                $('#skill7').attr('src', 'assets/img/kagura_2nd_2.png').data('skill-id', 'skill7');
+                $('#skill8').attr('src', 'assets/img/kagura_2nd_3.png').data('skill-id', 'skill8');
+                // Update skill info for Kagura
+                updateSkillInfo('Dreamland Twist', "Lunox has lost the sense of real time and cannot benefit from Cooldown Reduction. When Power of Chaos is enhanced, 80% of her Cooldown Reduction will be converted into Magic Penetration. When Power of Order is enhanced, 120% of her Cooldown Reduction will be converted into Physical and Magic Defense.");
+                $('#hero-name').text('Lunox');
+                $('#hero-role').text('Mage');
+                $('.banner').css('background-image', 'url("assets/img/lunox_epic1.jpg")');
+                $('.play').attr('href', '#');
+                
+                $('#switch-skill').hide();
+
+                if ($('.second').hasClass('active')) {
+                    $('.second').toggleClass('active');
+                    $('.first').toggleClass('active');
+                }
+                $('#item-type1').text('CD Reduction');
+                $('#item1').attr('src', 'assets/img/Magic_Shoes.webp');
+                $('#item2').attr('src', 'assets/img/Enchanted_Talisman.webp');
+                $('#item3').attr('src', 'assets/img/Concentrated_Energy.webp');
+                $('#item4').attr('src', 'assets/img/Necklace_of_Durance.webp');
+                $('#item5').attr('src', 'assets/img/Divine_Glaive.webp');
+                $('#item6').attr('src', 'assets/img/Winter_Truncheon.webp');
+
+                $('#item-type2').text('Burst');
+                $('#item7').attr('src', 'assets/img/Arcane_boots.webp');
+                $('#item8').attr('src', 'assets/img/Genius_Wand.webp');
+                $('#item9').attr('src', 'assets/img/Holy_Crystal.webp');
+                $('#item10').attr('src', 'assets/img/Concentrated_Energy.webp');
+                $('#item11').attr('src', 'assets/img/Divine_Glaive.webp');
+                $('#item12').attr('src', 'assets/img/Blood_Wings.webp');
+                break;
+
+                case 3:
+                // Update skill images and description for Kagura
+                $('#skill1').attr('src', 'assets/img/lylia_pas.png').data('skill-id', 'skill13');
+                $('#skill2').attr('src', 'assets/img/lylia_1.png').data('skill-id', 'skill14');
+                $('#skill3').attr('src', 'assets/img/lylia_2.png').data('skill-id', 'skill15');
+                $('#skill4').attr('src', 'assets/img/lylia_3.png').data('skill-id', 'skill16');
+                // Update skill info for Kagura
+                updateSkillInfo('Angry Gloom', "Lylia gets power from Gloom, increasing her Movement SPD by 15%. Each Gloom upgrade further increases this bonus by 5%. Gloom gains an upgrade every time he devours Shadow Energy, up to 5 times. Gloom upgrade increases the detonation damage of Shadow Energy.");
+                $('#hero-name').text('Lylia');
+                $('#hero-role').text('Mage');
+                $('.banner').css('background-image', 'url("assets/img/lylia_epic1.jpg")');
+                $('.play').attr('href', '#');
+                 $('#switch-skill').hide();
+
+                 if ($('.second').hasClass('active')) {
+                    $('.second').toggleClass('active');
+                    $('.first').toggleClass('active');
+                }
+                $('#item-type1').text('DPS');
+                $('#item1').attr('src', 'assets/img/Magic_Shoes.webp');
+                $('#item2').attr('src', 'assets/img/Enchanted_Talisman.webp');
+                $('#item3').attr('src', 'assets/img/Ice_Queen_Wand.webp');
+                $('#item4').attr('src', 'assets/img/Glowing_Wand.webp');
+                $('#item5').attr('src', 'assets/img/Genius_Wand.webp');
+                $('#item6').attr('src', 'assets/img/Winter_Truncheon.webp');
+
+                $('#item-type2').text('Burst');
+                $('#item7').attr('src', 'assets/img/Arcane_boots.webp');
+                $('#item8').attr('src', 'assets/img/Enchanted_Talisman.webp');
+                $('#item9').attr('src', 'assets/img/Ice_Queen_Wand.webp');
+                $('#item10').attr('src', 'assets/img/Holy_Crystal.webp');
+                $('#item11').attr('src', 'assets/img/Genius_Wand.webp');
+                $('#item12').attr('src', 'assets/img/Divine_Glaive.webp');
+                break;
+
+                case 4:
+                // Update skill images and description for Kagura
+                $('#skill1').attr('src', 'assets/img/vale_pas.png').data('skill-id', 'skill17');
+                $('#skill2').attr('src', 'assets/img/vale_1.png').data('skill-id', 'skill18');
+                $('#skill3').attr('src', 'assets/img/vale_2.png').data('skill-id', 'skill19');
+                $('#skill4').attr('src', 'assets/img/vale_3.png').data('skill-id', 'skill20');
+                // Update skill info for Kagura
+                updateSkillInfo('Windtalk', "When Vale reaches Lv.4/6/8, he can choose to enhance one of his skills and each skill can be enhanced once only. For each enhancement, he can pick one specialization of the chosen skill.");
+                $('#hero-name').text('Vale');
+                $('#hero-role').text('Mage');
+                $('.banner').css('background-image', 'url("assets/img/vale_epic1.jpg")');
+                $('.play').attr('href', '#');
+                 $('#switch-skill').hide();
+                 if ($('.second').hasClass('active')) {
+                    $('.second').toggleClass('active');
+                    $('.first').toggleClass('active');
+                }
+                $('#item-type1').text('DPS');
+                $('#item1').attr('src', 'assets/img/Magic_Shoes.webp');
+                $('#item2').attr('src', 'assets/img/Enchanted_Talisman.webp');
+                $('#item3').attr('src', 'assets/img/Holy_Crystal.webp');
+                $('#item4').attr('src', 'assets/img/Glowing_Wand.webp');
+                $('#item5').attr('src', 'assets/img/Genius_Wand.webp');
+                $('#item6').attr('src', 'assets/img/Winter_Truncheon.webp');
+
+                $('#item-type2').text('Burst');
+                $('#item7').attr('src', 'assets/img/Arcane_boots.webp');
+                $('#item8').attr('src', 'assets/img/Clock_of_Destiny.webp');
+                $('#item9').attr('src', 'assets/img/Lightning_Truncheon.webp');
+                $('#item10').attr('src', 'assets/img/Holy_Crystal.webp');
+                $('#item11').attr('src', 'assets/img/Genius_Wand.webp');
+                $('#item12').attr('src', 'assets/img/Divine_Glaive.webp');
+                break;
+        }
+    });
+});
+</script>
+
+</body>
+</html>
